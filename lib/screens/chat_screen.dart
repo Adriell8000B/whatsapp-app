@@ -38,36 +38,16 @@ class ChatScreen extends StatelessWidget {
             ),
             SizedBox(height: 12),
             ChatTile(
-              name: 'Raccoon',
+              name: 'Useless (You)',
               lastMessage: 'Hi mom!',
               hour: '19:31',
               imageURL:
                   'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.AMCbQhjTOm5w0N6zNscCnAHaGL%3Fpid%3DApi&f=1&ipt=678a39a734edcd8c87dcec18feb6cbe3ff0b7233293b234f4cc25e5b5c65bb5a&ipo=images',
+              notReadMessages: 0
             ),
             ChatTile(
-              name: 'Raccoon',
-              lastMessage: 'Hi mom!',
-              hour: '19:31',
-              imageURL:
-                  'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.AMCbQhjTOm5w0N6zNscCnAHaGL%3Fpid%3DApi&f=1&ipt=678a39a734edcd8c87dcec18feb6cbe3ff0b7233293b234f4cc25e5b5c65bb5a&ipo=images',
-            ),
-            ChatTile(
-              name: 'Raccoon',
-              lastMessage: 'Hi mom!',
-              hour: '19:31',
-              imageURL:
-                  'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.AMCbQhjTOm5w0N6zNscCnAHaGL%3Fpid%3DApi&f=1&ipt=678a39a734edcd8c87dcec18feb6cbe3ff0b7233293b234f4cc25e5b5c65bb5a&ipo=images',
-            ),
-            ChatTile(
-              name: 'Raccoon',
-              lastMessage: 'Hi mom!',
-              hour: '19:31',
-              imageURL:
-                  'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.AMCbQhjTOm5w0N6zNscCnAHaGL%3Fpid%3DApi&f=1&ipt=678a39a734edcd8c87dcec18feb6cbe3ff0b7233293b234f4cc25e5b5c65bb5a&ipo=images',
-            ),
-            ChatTile(
-              name: 'Raccoon',
-              lastMessage: 'Hi mom!',
+                name: 'Java',
+              lastMessage: 'I love OOP',
               hour: '19:31',
               imageURL:
                   'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.AMCbQhjTOm5w0N6zNscCnAHaGL%3Fpid%3DApi&f=1&ipt=678a39a734edcd8c87dcec18feb6cbe3ff0b7233293b234f4cc25e5b5c65bb5a&ipo=images',
