@@ -25,7 +25,7 @@ class UpdateBubbleWidget extends StatelessWidget {
       leading: _buildLeadingAvatar(),
       title: Text(
         name,
-        style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+        style: const TextStyle(fontWeight: FontWeight.w500, fontSize: 16),
       ),
       subtitle: Text(timestamp, style: TextStyle(color: Colors.grey.shade600)),
     );
@@ -44,7 +44,7 @@ class UpdateBubbleWidget extends StatelessWidget {
                     color: isSeen
                         ? const Color.fromARGB(128, 131, 131, 131)
                         : const Color(0xFF25D366),
-                    width: 2.5,
+                    width: 2.0,
                   ),
           ),
           child: CircleAvatar(

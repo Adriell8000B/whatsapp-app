@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_tabler_icons/flutter_tabler_icons.dart';
 import 'package:whatsapp/widgets/appbar_widget.dart';
 import 'package:whatsapp/widgets/chat_bubble_widget.dart';
 import 'package:whatsapp/widgets/pop_menu_widget.dart';
@@ -40,7 +41,7 @@ class ChatScreen extends StatelessWidget {
             ChatTile(
               name: 'Useless (You)',
               lastMessage: 'Hi mom!',
-              hour: '19:31',
+              hour: '19:30',
               imageURL:
                   'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.AMCbQhjTOm5w0N6zNscCnAHaGL%3Fpid%3DApi&f=1&ipt=678a39a734edcd8c87dcec18feb6cbe3ff0b7233293b234f4cc25e5b5c65bb5a&ipo=images',
               notReadMessages: 0
@@ -48,12 +49,27 @@ class ChatScreen extends StatelessWidget {
             ChatTile(
                 name: 'Java',
               lastMessage: 'I love OOP',
-              hour: '19:31',
+              hour: '13:46',
+              imageURL:
+                  'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.AMCbQhjTOm5w0N6zNscCnAHaGL%3Fpid%3DApi&f=1&ipt=678a39a734edcd8c87dcec18feb6cbe3ff0b7233293b234f4cc25e5b5c65bb5a&ipo=images',
+            ),
+            ChatTile(
+              name: 'Go',
+              lastMessage: 'I love structs',
+              hour: '13:40',
               imageURL:
                   'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.AMCbQhjTOm5w0N6zNscCnAHaGL%3Fpid%3DApi&f=1&ipt=678a39a734edcd8c87dcec18feb6cbe3ff0b7233293b234f4cc25e5b5c65bb5a&ipo=images',
             ),
           ],
         ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {},
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadiusGeometry.circular(50),
+        ),
+        backgroundColor: Color(0xFF25D366),
+        child: const Icon(TablerIcons.message_2_plus, color: Color(0xFF23232e),),
       ),
     );
   }

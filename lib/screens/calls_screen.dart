@@ -14,10 +14,8 @@ class CallsScreen extends StatelessWidget {
         menuWidget: PopMenuWidget(),
         actionIcon: Icons.search,
       ),
-      // --- THE BODY SECTION ---
       body: ListView(
         children: [
-          // 1. Create Call Link Section
           ListTile(
             leading: const CircleAvatar(
               backgroundColor: Color(0xFF25D366),
@@ -39,16 +37,15 @@ class CallsScreen extends StatelessWidget {
             ),
           ),
 
-          // 2. Recent Calls List
           _buildCallItem(
-            name: 'John Doe',
+            name: 'Harry Osborn',
             time: 'Yesterday, 10:45 PM',
             isMissed: true,
             isIncoming: true,
             icon: TablerIcons.phone,
           ),
           _buildCallItem(
-            name: 'Jane Smith',
+            name: 'Dr. Conors',
             time: 'January 25, 12:15 PM',
             isMissed: false,
             isIncoming: false,
@@ -56,19 +53,17 @@ class CallsScreen extends StatelessWidget {
           ),
         ],
       ),
-      // --- YOUR FAB ---
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(50),
         ),
         backgroundColor: const Color(0xFF25D366),
-        child: const Icon(TablerIcons.phone_plus, color: Colors.white),
+        child: const Icon(TablerIcons.phone_plus, color: Color(0xFF23232e)),
       ),
     );
   }
 
-  // Helper method to keep code clean
   Widget _buildCallItem({
     required String name,
     required String time,

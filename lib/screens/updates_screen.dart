@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_tabler_icons/flutter_tabler_icons.dart';
 import 'package:whatsapp/widgets/appbar_widget.dart';
 import 'package:whatsapp/widgets/pop_menu_widget.dart';
 import 'package:whatsapp/widgets/update_bubble_widget.dart';
@@ -38,29 +39,42 @@ class UpdatesScreen extends StatelessWidget {
             UpdateBubbleWidget(
               imageUrl:
                   "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.hERdi95N5TxAvS3O-q4qIgHaDt%3Fpid%3DApi&f=1&ipt=5ff4429c230df909a1f3ae88496d5a1126b0bea7db443648e721deb3544a662f&ipo=images",
-              name: "Zé Preto",
+              name: "Malbolge",
               timestamp: "12 minutes ago",
             ),
             UpdateBubbleWidget(
               imageUrl:
                   "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.hERdi95N5TxAvS3O-q4qIgHaDt%3Fpid%3DApi&f=1&ipt=5ff4429c230df909a1f3ae88496d5a1126b0bea7db443648e721deb3544a662f&ipo=images",
-              name: "Java",
+              name: "Go",
               timestamp: "20 minutes ago",
             ),
             UpdateBubbleWidget(
               imageUrl:
                   "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.hERdi95N5TxAvS3O-q4qIgHaDt%3Fpid%3DApi&f=1&ipt=5ff4429c230df909a1f3ae88496d5a1126b0bea7db443648e721deb3544a662f&ipo=images",
-              name: "Cornos de elite",
+              name: "Typescript",
               timestamp: "1 minute ago",
+            ),
+            Padding(
+              padding: const EdgeInsets.only(left: 22, top: 20, bottom: 4),
+              child: Text("Viewed Updates"),
             ),
             UpdateBubbleWidget(
               imageUrl:
                   "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.hERdi95N5TxAvS3O-q4qIgHaDt%3Fpid%3DApi&f=1&ipt=5ff4429c230df909a1f3ae88496d5a1126b0bea7db443648e721deb3544a662f&ipo=images",
-              name: "Smzinho",
+              name: "C++",
               timestamp: "7 minutes ago",
+              isSeen: true,
             ),
           ],
         ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {},
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadiusGeometry.circular(50)
+        ),
+        backgroundColor: Color(0xFF25D366),
+        child: const Icon(TablerIcons.camera_plus, color: Color(0xFF23232e),),
       ),
     );
   }

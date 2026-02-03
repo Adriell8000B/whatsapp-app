@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 
 class AppbarWidget extends StatelessWidget implements PreferredSizeWidget {
   final String title;
-  final IconData? actionIcon; // The optional icon (e.g., Search)
+  final IconData? actionIcon;
   final VoidCallback? onActionPressed;
-  final Widget menuWidget; // Your PopMenuWidget
+  final Widget menuWidget;
 
   const AppbarWidget({
     super.key,
@@ -27,7 +27,6 @@ class AppbarWidget extends StatelessWidget implements PreferredSizeWidget {
         ),
       ),
       actions: [
-        // This is a "collection if" - it only adds the widget if actionIcon is not null
         if (actionIcon != null)
           IconButton(
             icon: Icon(actionIcon),
