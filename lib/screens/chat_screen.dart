@@ -44,10 +44,10 @@ class ChatScreen extends StatelessWidget {
               hour: '19:30',
               imageURL:
                   'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.AMCbQhjTOm5w0N6zNscCnAHaGL%3Fpid%3DApi&f=1&ipt=678a39a734edcd8c87dcec18feb6cbe3ff0b7233293b234f4cc25e5b5c65bb5a&ipo=images',
-              notReadMessages: 0
+              notReadMessages: 0,
             ),
             ChatTile(
-                name: 'Java',
+              name: 'Java',
               lastMessage: 'I love OOP',
               hour: '13:46',
               imageURL:
@@ -69,7 +69,7 @@ class ChatScreen extends StatelessWidget {
           borderRadius: BorderRadiusGeometry.circular(50),
         ),
         backgroundColor: Color(0xFF25D366),
-        child: const Icon(TablerIcons.message_2_plus, color: Color(0xFF23232e),),
+        child: const Icon(TablerIcons.message_2_plus, color: Color(0xFF23232e)),
       ),
     );
   }
