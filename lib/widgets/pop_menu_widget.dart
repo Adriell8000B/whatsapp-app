@@ -9,11 +9,15 @@ class PopMenuWidget extends StatelessWidget {
       iconColor: Colors.grey,
       offset: const Offset(0, 50),
       itemBuilder: (context) => [
-        'Novo grupo',
-        'Nova transmissão',
-        'Aparelhos conectados',
-        'Mensagens favoritas',
-        'Configurações',
+        'New group',
+        'New community',
+        'Broadcast lists',
+        'Linked devices',
+        'Starred',
+        'Discover business',
+        'Payments',
+        'Read all',
+        'Settings',
       ].map((choice) => PopupMenuItem(
         value: choice,
         child: Text(
