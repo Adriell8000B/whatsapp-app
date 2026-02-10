@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_tabler_icons/flutter_tabler_icons.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class BottomNavigatorWidget extends StatelessWidget {
   final int currentIndex;
@@ -14,28 +13,29 @@ class BottomNavigatorWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return BottomNavigationBar(
-      type: BottomNavigationBarType.fixed,
-      currentIndex: currentIndex,
-      onTap: onTap,
-      selectedFontSize: 12,
-      enableFeedback: false,
-      selectedLabelStyle: TextStyle(height: 2.5),
-      items: const [
-        BottomNavigationBarItem(
+    return NavigationBar(
+      selectedIndex: currentIndex,
+      onDestinationSelected: onTap,
+      height: 70,
+      backgroundColor: Theme.of(context).scaffoldBackgroundColor,
+      labelBehavior: NavigationDestinationLabelBehavior.alwaysShow,
+
+      destinations: const [
+        NavigationDestination(
           icon: Icon(TablerIcons.message),
+          selectedIcon: Icon(TablerIcons.message_filled),
           label: 'Chats',
         ),
-        BottomNavigationBarItem(
+        NavigationDestination(
           icon: Icon(TablerIcons.progress_check),
           label: 'Updates',
         ),
-        BottomNavigationBarItem(
-          icon: FaIcon(TablerIcons.users_group),
+        NavigationDestination(
+          icon: Icon(TablerIcons.users_group),
           label: 'Communities',
         ),
-        BottomNavigationBarItem(
-          icon: FaIcon(TablerIcons.phone_call),
+        NavigationDestination(
+          icon: Icon(TablerIcons.phone_call),
           label: 'Calls',
         ),
       ],
