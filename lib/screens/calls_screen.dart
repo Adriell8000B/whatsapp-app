@@ -28,7 +28,7 @@ class CallsScreen extends StatelessWidget {
             subtitle: const Text('Share a link for your WhatsApp call'),
             onTap: () {},
           ),
-          
+
           const Padding(
             padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
             child: Text(
@@ -39,13 +39,13 @@ class CallsScreen extends StatelessWidget {
 
           _buildCallItem(
             name: 'Harry Osborn',
-            time: 'Yesterday, 10:45 PM',
+            time: 'Yesterday, 10:45 AM',
             isMissed: true,
             isIncoming: true,
             icon: TablerIcons.phone,
           ),
           _buildCallItem(
-            name: 'Dr. Conors',
+            name: 'Dr. Connors',
             time: 'January 25, 12:15 PM',
             isMissed: false,
             isIncoming: false,
@@ -55,9 +55,7 @@ class CallsScreen extends StatelessWidget {
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(50),
-        ),
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
         backgroundColor: const Color(0xFF25D366),
         child: const Icon(TablerIcons.phone_plus, color: Color(0xFF23232e)),
       ),
