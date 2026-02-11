@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_tabler_icons/flutter_tabler_icons.dart';
 
 class SettingsBubbleWidget extends StatelessWidget {
   final IconData icon;
@@ -12,7 +11,7 @@ class SettingsBubbleWidget extends StatelessWidget {
     required this.icon,
     required this.title,
     required this.subtitle,
-    this.onTap
+    this.onTap,
   });
 
   @override
