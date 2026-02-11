@@ -4,12 +4,12 @@ class AppbarWidget extends StatelessWidget implements PreferredSizeWidget {
   final String title;
   final IconData? actionIcon;
   final VoidCallback? onActionPressed;
-  final Widget menuWidget;
+  final Widget? menuWidget;
 
   const AppbarWidget({
     super.key,
     required this.title,
-    required this.menuWidget,
+    this.menuWidget,
     this.actionIcon,
     this.onActionPressed,
   });
@@ -17,6 +17,7 @@ class AppbarWidget extends StatelessWidget implements PreferredSizeWidget {
   @override
   Widget build(BuildContext context) {
     return AppBar(
+      backgroundColor: Theme.of(context).scaffoldBackgroundColor,
       titleSpacing: 20,
       title: Text(
         title,
@@ -34,7 +35,7 @@ class AppbarWidget extends StatelessWidget implements PreferredSizeWidget {
             color: Colors.grey,
           ),
 
-        menuWidget,
+        if (menuWidget != null) menuWidget!,
         const SizedBox(width: 5),
       ],
     );
