@@ -3,7 +3,7 @@ import 'package:whatsapp/screens/calls_screen.dart';
 import 'package:whatsapp/screens/chat_screen.dart';
 import 'package:whatsapp/screens/communities_screen.dart';
 import 'package:whatsapp/screens/updates_screen.dart';
-import 'package:whatsapp/widgets/bottom_navigator_widget.dart';
+import 'package:whatsapp/navigation/bottom_navigator.dart';
 
 class ShellScreen extends StatefulWidget {
   const ShellScreen({super.key});
