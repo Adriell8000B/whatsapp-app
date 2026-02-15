@@ -15,7 +15,6 @@ class UpdatesScreen extends StatelessWidget {
         menuWidget: PopMenuWidget(),
         actionIcon: Icons.search,
       ),
-
       body: Padding(
         padding: EdgeInsets.only(top: 20),
         child: Column(
@@ -71,10 +70,10 @@ class UpdatesScreen extends StatelessWidget {
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
         shape: RoundedRectangleBorder(
-          borderRadius: BorderRadiusGeometry.circular(50)
+          borderRadius: BorderRadiusGeometry.circular(50),
         ),
         backgroundColor: Color(0xFF25D366),
-        child: const Icon(TablerIcons.camera_plus, color: Color(0xFF23232e),),
+        child: const Icon(TablerIcons.camera_plus, color: Color(0xFF23232e)),
       ),
     );
   }

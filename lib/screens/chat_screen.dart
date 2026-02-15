@@ -15,7 +15,6 @@ class ChatScreen extends StatelessWidget {
         menuWidget: PopMenuWidget(),
         actionIcon: Icons.camera_alt_outlined,
       ),
-
       body: Padding(
         padding: EdgeInsets.only(top: 20, left: 10, right: 20),
         child: Column(

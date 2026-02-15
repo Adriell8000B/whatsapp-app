@@ -11,10 +11,9 @@ class CommunitiesScreen extends StatelessWidget {
       appBar: AppbarWidget(title: 'Communities', menuWidget: PopMenuWidget()),
       body: ListView(
         children: [
-          const SizedBox(height: 12,),
+          const SizedBox(height: 12),
           _buildNewCommunityTile(),
-          const SizedBox(height: 12,),
-
+          const SizedBox(height: 12),
           const Divider(thickness: 0.1, color: Color(0xFFF2F2F2)),
 
           _buildCommunityItem(
